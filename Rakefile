@@ -6,6 +6,6 @@ desc "run the tests"
     
 desc "run service"
     task :server do
-    sh "ruby number_cruncher.rb"
+    sh "ruby twitter.rb"
 end
 
