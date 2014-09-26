@@ -1,0 +1,30 @@
+body{
+	color: white; 
+ 	font-family: Arial;
+ 	padding-left: 33.33%;
+
+ 	background: url(back.jpg) no-repeat fixed center ; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#cabecera{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 18%;
+}	
+
+#principal{
+
+}
+
+#introducir{
+	padding-left: 12%;
+}
+
+#button{
+	padding-left: 20%;
+}
+
