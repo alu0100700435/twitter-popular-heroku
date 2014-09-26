@@ -18,7 +18,7 @@ class TwitterPopular
 
 	def ordenar_t
 	end
-
+end
 
 get '/' do
 		@n_amigos = 0 
