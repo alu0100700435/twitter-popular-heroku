@@ -53,15 +53,16 @@ post '/' do
 	@usuarios = Hash.new
 	@name = params[:firstname] || ''
 	client = my_twitter_client()
-
+    
+    twitt = TwitterPopular.new
 
 	#Si el usuario introducido es de Twitter:
-	if (user_t(client, @name) == true)
-		@n_amigos = friends_t(client, @name)
-		@pic = imagen_t(client, @name)
+	if (twitt.user_t(client, @name) == true)
+		@n_amigos = twitt.friends_t(client, @name)
+		@pic = twitt.imagen_t(client, @name)
 
-		get_amigos_t(client, @name, @n_amigos, @usuarios)
-		@usuarios = ordenar_t(@usuarios)
+		twitt.get_amigos_t(client, @name, @n_amigos, @usuarios)
+		@usuarios = twitt.ordenar_t(@usuarios)
 	end
 end
 
