@@ -43,11 +43,11 @@
 				<p>Sus últimos 10 amigos ordenados por popularidad son:</p>
 				<p>
 					<div id="lista">
-						<ol>
+						
 							<% @usuarios.each { |user, count| %>
-								<li>@<%= user %> : <%= count %> <br></li>
+								<p>@<%= user %> : <%= count %></p>
 							<% } %>
-						</ol>
+						
 					</div>
 				</p>
 
