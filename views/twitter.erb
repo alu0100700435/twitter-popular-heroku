@@ -12,37 +12,47 @@
 		<title>Twitter App Popular</title>
 	</head>
 	<body>
-		<div id="cabecera">
-			<img src="/logo.png" WIDTH=125 HEIGHT=100 />
-		</div>
+		 
+			<div id="cabecera">
+				<img src="/logo.png" WIDTH=125 HEIGHT=100 />
+			</div>
 
-		<div id="principal">
-			<h2>Introduzca un usuario de Twitter:</h2>
+		<% if @name == '' %>
+			<div id="principal">
+				<h2>Introduzca un usuario de Twitter:</h2>
 
-			<form action="/" method="post">
+				<form action="/" method="post">
 
-				<div id="introducir" class="input-group">
-					<input type="text" name="firstname" value="" class="form-control" placeholder="Username" autofocus>
-				</div>
-				<br>
-			   	<div id="button"> 
-			   		<button type="submit" class="btn btn-default">Submit</button>
-			   	</div>
-			   	
-			</form>
-			<% if @name != ''%>
+					<div id="introducir" class="input-group">
+						<input type="text" name="firstname" value="" class="form-control" placeholder="Username" autofocus>
+					</div>
+					
+				   	<div id="button"> 
+				   		<button type="submit" class="btn btn-default">Submit</button>
+				   	</div>
+				   	
+				</form>
+			</div>
 
-				<p><b> Usuario @<%= @name %> </b></p>
+		<%else%>
+			<div id="principal">
+				<h1><b> Usuario @<%= @name %> </b></h1>
 				<img src="<%= @pic %>"/><br>
-
-				Sus últimos 10 amigos ordenados por popularidad son:
+			
+				<h2>Sus últimos 10 amigos ordenados por popularidad son:</h2>
+				<p>
+					<div id="lista">
 						<ol>
 							<% @usuarios.each { |user, count| %>
-								<li><%= user %> : <%= count %> <br></li>
+								<li>@<%= user %> : <%= count %> <br></li>
 							<% } %>
 						</ol>
-			<% end %>
-		</div>
+					</div>
+				</p>
+
+			</div>
+		<% end %>
+		
 
 	</body>
 </html>
