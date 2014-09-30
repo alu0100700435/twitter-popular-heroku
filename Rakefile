@@ -1,5 +1,5 @@
 task(:default) do
-    require_relative 'test'
+    require_relative 'test/test'
 end
 desc "run the tests"
     task :test => :default

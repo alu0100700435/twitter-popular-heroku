@@ -7,7 +7,7 @@ Sistemas y Tecnologías web
 Objetivo
 -----
 
-Hacer que la aplicación [twitter de popularidad], creada anteriormente, se desplegue en Heroku (plataforma como servicio de computación en la Nube que soporta distintos lenguajes de programación), además de incorporar el uso de tests. 
+Hacer que la aplicación [twitter de popularidad], creada anteriormente, se despliegue en Heroku (plataforma como servicio de computación en la Nube que soporta distintos lenguajes de programación), además de incorporar el uso de tests. 
 
 Funcionamiento
 -----
@@ -69,5 +69,5 @@ Es probable, que si el usuario elegido tiene muchos amigos, la aplicación tarde
 
 
 [twitter de popularidad]:https://alu0100700435.github.io/twitter-popular
-[aquí]:agile-fortress-1869.herokuapp.com
+[aquí]:https://agile-fortress-1869.herokuapp.com
 [twitter-popular-heroku]:https://github.com/alu0100700435/twitter-popular
