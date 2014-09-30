@@ -31,6 +31,10 @@
 			   	
 			</form>
 			<% if @name != ''%>
+
+				<p><b> Usuario @<%= @name %> </b></p>
+				<img src="<%= @pic %>"/><br>
+
 				Sus últimos 10 amigos ordenados por popularidad son:
 						<ol>
 							<% @usuarios.each { |user, count| %>
