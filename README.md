@@ -7,7 +7,7 @@ Sistemas y Tecnologías web
 Objetivo
 -----
 
-Hacer que la aplicación [twitter de popularidad], creada en anteriormente, se desplegue en Heroku (una plataforma como servicio de computación en la Nube que soporta distintos lenguajes de programación), además de incorporar el uso de tests. 
+Hacer que la aplicación [twitter de popularidad], creada anteriormente, se desplegue en Heroku (plataforma como servicio de computación en la Nube que soporta distintos lenguajes de programación), además de incorporar el uso de tests. 
 
 Funcionamiento
 -----
