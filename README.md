@@ -69,5 +69,5 @@ Es probable, que si el usuario elegido tiene muchos amigos, la aplicación tarde
 
 
 [twitter de popularidad]:https://alu0100700435.github.io/twitter-popular
-[aquí]:agile-fortress-1869.herokuapp.com
+[aquí]:https://agile-fortress-1869.herokuapp.com
 [twitter-popular-heroku]:https://github.com/alu0100700435/twitter-popular
