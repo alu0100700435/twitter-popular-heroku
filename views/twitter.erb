@@ -8,55 +8,62 @@
 		<link href="/bootstrap.min.css" rel="stylesheet">
 		<link href="/bootstrap.css" rel="stylesheet">
 		<link href="/style.css" rel="stylesheet">
-		
+
 		<title>Twitter App Popular</title>
 	</head>
 	<body>
-		 
-			<div id="cabecera">
-				<img src="/logo.png" WIDTH=125 HEIGHT=100 />
-			</div>
+		 <div class="container">
+			
 
 		<% if @name == '' %>
-			<div id="principal">
-				<h2>Introduzca un usuario de Twitter:</h2>
+			<div class="header col-sm-12 col-xs-12 col-lg-12" id="cabecera">
+				<img src="/logo.png" WIDTH=125 HEIGHT=100 />
+			</div>
+			<div class="main col-sm-12 col-xs-12 col-lg-12" id="principal">
+				<h3>Introduzca un usuario Twitter</h3>
 
-				<form action="/" method="post">
+				<form action="/" method="post" class="form-inline" role="form">
 
-					<div id="introducir" class="input-group">
+					<div id="introducir" class="input-group col-sm-4 col-xs-12 col-lg-4">
 						<span class="input-group-addon">@</span>
-				  <input type="text" name="firstname" value="" class="form-control" placeholder="Username" autofocus>
+				  <input type="text" name="firstname" value="" class="form-control" placeholder="Usuario twitter" autofocus>
+
 					</div>
-				   	<div id="button"> 
-				   		<button type="submit" class="btn btn-default">Submit</button>
-				   	</div>
+					
+				   	<button type="submit" class="btn btn-primary">Enviar</button>
+
 				   	
 				</form>
 			</div>
 
 		<%else%>
-			<div id="principal">
-				<h1><b> Usuario @<%= @name %> </b></h1>
-				<img src="<%= @pic %>"/><br>
+			<div class="main col-sm-12 col-xs-12 col-lg-12" id="principal">
+				<h2><b> @<%= @name %> </b></h2>
+				<img class="img-responsive img-thumbnail" src="<%= @pic %>"/><br>
 			
-				<h2>Sus últimos 10 amigos ordenados por popularidad son:</h2>
+				<p>Sus últimos 10 amigos ordenados por popularidad son:</p>
 				<p>
 					<div id="lista">
-						<ol>
+						
 							<% @usuarios.each { |user, count| %>
-								<li>@<%= user %> : <%= count %> <br></li>
+								<p>@<%= user %> : <%= count %></p>
 							<% } %>
-						</ol>
+						
 					</div>
 				</p>
 
-				<div id="button"> 
-				  	<a href="/"> <button type="submit" class="btn btn-default">Volver Atrás</button> </a>
+				<div id="button" class="mybtn col-sm-12 col-xs-12 col-lg-12"> 
+				  	<a href="/"> <span class="glyphicon glyphicon-home"></span> </a>
 				</div>
 
 			</div>
+
+
 		<% end %>
-		
+		</div>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="public/bootstrap.min.js"></script>
 
 	</body>
 </html>

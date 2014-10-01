@@ -59,7 +59,7 @@ Hay dos formas posibles de ver el funcionamiento de la aplicación, una mediante
     
     Una vez en ejecución, abre el navegador y escribe en la barra de direcciones *localhost:4567* y accederás a la web de la aplicación:
     
-    ![ejemplo navegador](PONER IMAGEN) 
+    ![ejemplo navegador](https://raw.githubusercontent.com/alu0100700435/twitter-popular-heroku/gh-pages/public/ejemplo.png) 
     
     Y ya, sólo has de poner el usuario twitter que desees y enviar, y así apareceran sus amigos más populares. 
     

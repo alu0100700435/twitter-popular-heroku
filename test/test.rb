@@ -33,8 +33,20 @@ describe "Twitter Popular" do
     
     it "should return user's wrong number of friends" do
         refute 4, @twitt.friends_t(@client, @nom)
-    end    
+    end 
 
+end
+
+describe "Web" do
+    it "should load the index page" do
+        get '/'
+            assert last_response.ok?
+        end
+
+    it "it should exits a username field" do
+        get '/'
+            assert last_response.body.include?("Introduzca un usuario Twitter")
+        end  
 end
 
 
