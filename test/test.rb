@@ -32,7 +32,7 @@ describe "Twitter Popular" do
     end
     
     it "should return user's wrong number of friends" do
-        refute 4, @twitt.friends_t(@client, @nom)
+        refute_equal 4, @twitt.friends_t(@client, @nom)
     end 
 
 end
