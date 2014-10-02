@@ -63,6 +63,8 @@ post '/' do
 
 		twitt.get_amigos_t(client, @name, @n_amigos, @usuarios)
 		@usuarios = twitt.ordenar_t(@usuarios)
+	else
+		@name = ''
 	end
 	erb :twitter
 end
